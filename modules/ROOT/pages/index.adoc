@@ -1,5 +1,5 @@
 = Angular cookbook
-:navtitle: Angular cookbook
+:navtitle: Home
 :page-role: ng
 
 Hallo bei ng-cook
