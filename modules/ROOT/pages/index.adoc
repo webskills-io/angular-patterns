@@ -1,0 +1,5 @@
+= Angular cookbook
+:navtitle: Angular cookbook
+:page-role: ng
+
+Hallo bei ng-cook
