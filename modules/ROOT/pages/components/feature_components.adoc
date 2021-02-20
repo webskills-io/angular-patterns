@@ -1,4 +1,5 @@
 = Feature-Komponenten
+:navtitle: Feature
 
 Typische Eigenschaften von smart components:
 

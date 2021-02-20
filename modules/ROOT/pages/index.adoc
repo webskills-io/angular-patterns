@@ -2,4 +2,6 @@
 :navtitle: Home
 :page-role: ng
 
+Patterns und Best-Practices rund um Angular.
 
+image::angular.svg[align="center"]

@@ -36,5 +36,5 @@ export class MyComponent {
 ----
 
 [[services]]
-.Widget-Proxy
+.Services
 image::services.svg[align="center"]

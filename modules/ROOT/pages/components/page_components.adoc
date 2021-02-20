@@ -1,4 +1,5 @@
 = Page-Komponenten
+:navtitle: Page
 
 Der Ordner pages enthält auf der ersten Ebene Angular-Komponenten die eine routable Seite repräsentieren.
 In Unterordner sind zugehörige smart components abgelegt.

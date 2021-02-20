@@ -1,4 +1,4 @@
-= Service
+= Feature-Service
 
 * Use case spezifische logic
 * nutzt Facade, Adapter und/oder Store

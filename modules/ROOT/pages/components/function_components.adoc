@@ -1,4 +1,5 @@
 = Function-Komponenten
+:navtitle: Function
 
 Typische Eigenschaftes von dump components:
 

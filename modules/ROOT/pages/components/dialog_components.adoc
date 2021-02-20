@@ -1,4 +1,6 @@
 = Dialog-Komponenten
+:navtitle: Dialog
+
 Bei einem wieauchimmer geartetem Dialog verhält sich genauso wie bei einem Widget (oder einer Page).
 
 Eine äußere Komponenten versteckt vor der inneren Komponenten in welchem Kontext zu aufgerufen wird.
