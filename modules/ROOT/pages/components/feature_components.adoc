@@ -1,0 +1,10 @@
+= Feature-Komponenten
+
+Typische Eigenschaften von smart components:
+
+* Entsprechen ungefähr `organisms` im atomic design
+* Sind Use-Case-spezifisch
+* Sind teilweise wiederverwendbar
+* Werden in Pages verwendet
+* Sind nah an der Geschäftslogik
+* Verwenden Services (`@Injectable`) und ändern darüber den State der App

@@ -1,0 +1,35 @@
+= Adapter
+
+* Für Kommunikation mit extern (Backend, LocalStorage)
+* Austauschbar
+* impedance mismatch ausgleichen / model-Transformation
+
+Typische Eigenschaften von Adaptern:
+
+* Sind Use-case agnostisch (bzw. deckt sich mit dem Use-Case der Backend-API)
+* Korrespondieren zu einer (HTTP/CRUD-) Schnittstelle im Backend
+* Verstecken die Kommunikation zwischen Frontend und Backend
+* Implementieren keine eigene Logik außer Mapping von Daten
+* Sind stateless
+
+
+[source,typescript]
+----
+@Injectable({ providedIn: 'root' })
+export class MyAdapter {
+  constructor(
+    private http: HttpClient,
+    private configService: ConfigurationService
+  ) {}
+
+  getData(): Observable<MyData> {
+    return this.http.get<MyData[]>(
+      `${this.getBaseUrl()}/v1/myData`
+    );
+  }
+
+  private getBaseUrl(): string {
+    return this.configService.getProperty('baseUrl', 'localhost');
+  }
+}
+----

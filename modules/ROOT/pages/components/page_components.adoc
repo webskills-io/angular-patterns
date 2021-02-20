@@ -1,0 +1,15 @@
+= Page-Komponenten
+
+Der Ordner pages enthält auf der ersten Ebene Angular-Komponenten die eine routable Seite repräsentieren.
+In Unterordner sind zugehörige smart components abgelegt.
+
+Typische Eigenschaften von pages:
+
+* Entsprechen ungefähr `pages` und `templates` im atomic design
+* Korrespondieren mit einer URL und werden beim Routing benutzt
+* Bekommen `Router` oder `ActivatedRoute` injected um Pfad-Parameter auszulesen oder anderweitig mit der URL zu interagieren
+* Sind nicht wiederverwendbar
+* Sind Use-Case-spezifisch
+* Sind schlecht automatisiert zu testen
+* Wrappen andere Komponenten, benötigen kein Styling
+* Verwenden keine `@Output` oder `@Input`

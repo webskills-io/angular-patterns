@@ -1,2 +1,11 @@
-* xref:index.adoc[] 
+* xref:index.adoc[]
 
+* xref:ROOT:outer_components.adoc[]
+** xref:ROOT:components/page_components.adoc[] 
+** xref:ROOT:components/feature_components.adoc[] 
+** xref:ROOT:components/function_components.adoc[] 
+** xref:ROOT:components/dialog_components.adoc[] 
+** xref:ROOT:components/widget_components.adoc[] 
+
+* xref:ROOT:services.adoc[]
+** xref:ROOT:services/adapter.adoc[]

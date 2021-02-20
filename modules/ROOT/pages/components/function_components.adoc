@@ -1,0 +1,10 @@
+=== Function-Komponenten
+
+Typische Eigenschaftes von dump components:
+
+* Entsprechen ungefähr `atoms` und `molecules` im atomic design
+* Sind Use-case agnostisch
+* Sind generisch nutzbar
+* Sind sehr gut testbar
+* Benutzen keine Services, interagieren über `@Output` und `@Input` mit den Eltern-Komponenten
+* Sind teilweise in ng-tools enthalten

@@ -1,4 +1,4 @@
-== Widget-Component
+= Widget-Komponenten
 Bei einem Widget verhält sich genauso wie bei einem Dialog (oder einer Page).
 
 Da Dialoge üblicherweise Standard-Funktionalitäten sind, die eine Bibliothek mitbringt, Widgets hingegen nicht, ist hier mehr Handarbeit erforderlich.

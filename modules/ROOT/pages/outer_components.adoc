@@ -1,0 +1,7 @@
+= Äußere Komponenten
+
+Eine grundlegende Frage ist, wir groß eine Komponente sein soll.
+Sie kann die Größe haben wie native Elemente (z.B. `<input type="text">` oder `<h1>`) oder im Extremfall könnte auch quasi die ganze Applikation in einer Komponente untergebracht werden.
+Allerdings haben auch native Elemente schon deutlich unterschiedliche Komplexitäten, siehe z.B. `<input type="date">`
+
+Häufig wird von Smart und Dump components gesprochen.
