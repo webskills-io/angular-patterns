@@ -1,0 +1,10 @@
+== Widget-Component
+Bei einem Widget verhält sich genauso wie bei einem Dialog (oder einer Page).
+
+Da Dialoge üblicherweise Standard-Funktionalitäten sind, die eine Bibliothek mitbringt, Widgets hingegen nicht, ist hier mehr Handarbeit erforderlich.
+
+HOC mit Factory: wrapper + container + content
+
+[[widget_proxy]]
+.Widget-Proxy
+image::widget.svg[align="center"]

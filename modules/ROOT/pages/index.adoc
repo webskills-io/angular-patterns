@@ -1,5 +1,5 @@
-= Angular cookbook
+= Angular patterns
 :navtitle: Home
 :page-role: ng
 
-Hallo bei ng-cook
+

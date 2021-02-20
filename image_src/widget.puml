@@ -1,0 +1,30 @@
+@startuml
+scale 1.2
+skinparam handwritten true
+skinparam monochrome true
+skinparam packageStyle rect
+skinparam defaultFontName SS Soapy Hands
+skinparam shadowing false
+
+class "Client" as client
+
+abstract "AbstractWidgetComponent" as abstractWidgetComponent
+interface "Widget" as iWidget
+class "WidgetComponent" as widgetComponent
+
+abstract "AbstractWidget" as abstractWidget
+class "WidgetAComponent" as widgetA
+class "WidgetBComponent" as widgetB
+
+client --> widgetComponent : configures & uses
+
+abstractWidgetComponent <|-- widgetComponent
+iWidget <|-[dashed]- widgetComponent
+
+widgetComponent --> abstractWidget : creates & uses instance of
+
+iWidget <|-[dashed]- abstractWidget
+abstractWidget <|-- widgetA
+abstractWidget <|-- widgetB
+
+@enduml
