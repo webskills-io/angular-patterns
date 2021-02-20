@@ -1,4 +1,4 @@
-=== Function-Komponenten
+= Function-Komponenten
 
 Typische Eigenschaftes von dump components:
 
