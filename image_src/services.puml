@@ -1,0 +1,19 @@
+@startuml
+scale 1.2
+skinparam handwritten true
+skinparam monochrome true
+skinparam packageStyle rect
+skinparam defaultFontName SS Soapy Hands
+skinparam shadowing false
+
+object "Component" as component
+object "Facade" as facade
+object "Adapter" as adapter
+object "Store" as store
+
+component -> facade
+facade --> adapter
+facade --> store
+
+
+@enduml

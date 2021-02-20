@@ -1,0 +1,13 @@
+= Service
+
+* Use case spezifische logic
+* nutzt Facade, Adapter und/oder Store
+* liefert passendes Datenmodel für Template
+
+Typische Eigenschaften eines Services
+
+* Use-case spezifisch
+* Verwenden Adapter zur Kommunikation mit dem Backend
+* Implementieren notwendige Business-Logik vor Senden und/oder nach Empfang von Daten
+* Sind im einfachste Falle nur ein Wrapper um einen Adapter
+* Können stateful sein

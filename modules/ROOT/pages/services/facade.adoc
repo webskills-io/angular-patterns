@@ -1,0 +1,3 @@
+= Facade
+
+kombinieren Store und Adapter zu einer Einheit

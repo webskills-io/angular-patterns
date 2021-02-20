@@ -1,2 +1,40 @@
 = Services
 
+Services sind sehr einfach zu testen und wartbar zu halten.
+Komponenten hingegen sind eher aufwendig zu testen und tendieren dazu, schlecht wartbar zu sein.
+Es ist daher naheliegend, Komponenten zu klein wie möglich zu halten.
+
+Die Templating-Sprache von Angular hat eine beschränkte Ausdrucksfähigkeit.
+Die Ausdrucksfähigkeit von Typescript ist hingegen deutlich ausgeprägter.
+Daher hat es Sinn, dass Komponenten ein geeignetes Model zur Verfügung stellen, das in den Templates einfach verarbeitet werden kann.
+
+Die Kommunikation mit externen Systemen anzupassen ist häufig aufwendiger, als innerhalb der Applikation die Daten entsprechend aufzubereiten.
+Änderungen der externen API sollen nicht zwangsläufig zu umfangreichen Anpassungen in der App führen.
+Es ist daher sinnvoll, die Kommunikation in einen Adapter zu kapseln.
+
+
+== Reaktive Komponenten
+
+[source,typescript]
+----
+@Component({
+  template: `data$ | async`
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class MyComponent {
+  data$ = new BehaviourSubject<string>(null);
+
+  constructor(private facade: Facade){
+    this.facade.getData().subscribe(this.data$);
+  }
+
+  onSomeEvent(): void {
+    const newData = this.data$.getValue() + ' modified';
+    this.facade.updateData(newData);
+  }
+}
+----
+
+[[services]]
+.Widget-Proxy
+image::services.svg[align="center"]
