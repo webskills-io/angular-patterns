@@ -4,4 +4,4 @@
 
 Patterns und Best-Practices rund um Angular.
 
-image::angular.svg[align="center"]
+image::angular.svg[alt=Flower,width=300,height=300,align="center"]
