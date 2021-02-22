@@ -4,14 +4,19 @@
 * Redux/Flux
   ** Effects: danger zone
 
+
+== Lebensdauer
+
 Da der Store stateful und potentiell eine große Datenmenge aufnehmen kann, ist es sinnvoll, sich Gedanken über die Lebensdauer des Store zu machen.
 Die Lebensdauer kann an folgenden Stellen beeinflusst werden:
 
 Im Module:: Wird der Store bei den Providers eingetragen, wird die Klasse für die zugehörigen Komponenten des jeweiligen Moduls bereitgestellt.
 Allerdings wird der Store nicht destroyed, wenn zu einem View navigiert und die Komponenten destroyed werden.
-In der Komponente:: Wird der Store in einer Komponenten bei den Providers eingetragen, wird der Store destroyed, wenn die Komponenten destroyed wird.
+In der Komponente:: Wird der Store in einer Komponente bei den Providers eingetragen, wird der Store destroyed, wenn die Komponente destroyed wird.
 Das kann aber auch unerwünscht sein, wenn der Store zwischen mehreren Komponenten geteilt werden soll.
 In einer Wrapper-Komponente:: Eine weitere Möglichkeit die Lebensdauer des Stores zu beschränken, besteht darin, eine Wrapper-Komponenten einzuführen, die den Store in ihre Providers aufnimmt und über ein `<router-outlet></router-outlet>` und zugehöriges Routing die gewünschten Komponenten zur Anzeige bringt.
+
+== Implementierung (mit AbstractStore)
 
 [source,typescript]
 ----
