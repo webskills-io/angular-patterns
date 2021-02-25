@@ -5,3 +5,7 @@ Sie kann die Größe haben wie native Elemente (z.B. `<input type="text">` oder 
 Allerdings haben auch native Elemente schon deutlich unterschiedliche Komplexitäten, siehe z.B. `<input type="date">`
 
 Häufig wird von Smart und Dump components gesprochen.
+
+[[outer_components]]
+.Outer components
+image::outer_components.drawio.svg[align="center"]
