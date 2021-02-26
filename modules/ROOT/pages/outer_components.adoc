@@ -1,10 +1,37 @@
 = Äußere Komponenten
 
+.Concerns
+****
+Die folgenden Concerns werden berührt:
+
+- die sichtbare Struktur aus html-Tags
+- das Styling per CSS
+- das Routing und die Interaktion mit der URL
+- die Verarbeitung Logik und State
+- data type presentation/handling (-> functions "Date Picker")
+- state dependent control of visibility, changeability, ...
+- data handling (caching...) (nur am Rande)
+****
+
+.Anforderungen
+****
+Im Folgenden werden diese Anforderungen tangiert:
+
+- Komponenten sollen gut testbar sein.
+- Einige Komponente sollen wieverwendbar sein.
+- Komponenten sollten im Rahmen einer Pattern-Library verwendet werden können.
+- Externe Komponenten-Libraries sollen sich harmonisch einfügen.
+- Komponenten sollen von den relevanten Leuten verstehbar und pflegbar sein.
+- Änderungen sollen nur den gewünschten Impact haben - überraschende Nebeneffekte sollen vermieden.
+- Anforderungs-Änderungen (die z.B. UI, Logik oder das Datenmodell betreffen) sollen möglichst nur Umsetzungs-Änderungen an wenigen, leicht auffindbaren Stellen erfordern.
+****
+
+
 Eine grundlegende Frage ist, wir groß eine Komponente sein soll.
 Sie kann die Größe haben wie native Elemente (z.B. `<input type="text">` oder `<h1>`) oder im Extremfall könnte auch quasi die ganze Applikation in einer Komponente untergebracht werden.
 Allerdings haben auch native Elemente schon deutlich unterschiedliche Komplexitäten, siehe z.B. `<input type="date">`
 
-Häufig wird von Smart und Dump components gesprochen.
+Häufig wird von Smart und Dumb components gesprochen.
 
 [[outer_components]]
 .Outer components
